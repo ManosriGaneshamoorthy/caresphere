@@ -1,0 +1,52 @@
+.quote-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    background-image: url('C:/Users/manos/OneDrive/Desktop/healthcare/manosri/src/components/User/Pages/yag.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    color: rgb(11, 11, 11);
+    height: 600px;
+    position: relative;
+}
+  
+.quote-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0; /* Ensure the overlay covers the whole section */
+    right: 0;
+    bottom: 0;/* Add a dark overlay to make text readable */
+    z-index: 1;
+}
+  
+.quote-content {
+    z-index: 2; /* Ensure content is above the overlay */
+    max-width: 50%; /* Adjust as needed */
+    margin-left: 0; /* Align content to the left */
+    text-align: left; /* Align text to the left */
+}
+  
+.quote-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+  
+.quote-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+  
+.appointment-button {
+    background-color: #040e18;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.appointment-button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,158 @@
+/* styles.css */
+.admin-dashboard {
+  display: flex;
+  height:max-content
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: fixed; /* Add this to fix the sidebar */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Make the sidebar full height */
+  overflow-y: auto; /* Add this to allow scrolling within the sidebar */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px; /* Add this to push the main content to the right */
+  overflow-y: auto; /* Add this to allow scrolling within the main content */
+}
+
+.header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ebe5e5;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.content {
+  padding: 20px;
+  height: calc(100vh - 40px); /* Make the content full height minus the header and padding */
+  overflow-y: auto; /* Add this to allow scrolling within the content */
+}
+
+.searchArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.doctorListSearch {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.doctorList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.doctor-card {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-image {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.doctor-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.doctor-info {
+  padding: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.specialty {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.email {
+  font-size: 16px;
+  color: #337ab7;
+  margin-bottom: 10px;
+}
+
+.location {
+  font-size: 16px;
+  color: #666;
+}
+
+.remove-button {
+  background-color: #db3333;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #cb2121;
+}

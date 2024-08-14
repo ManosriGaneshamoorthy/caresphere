@@ -1,0 +1,187 @@
+body {
+  background-color: #f7f7f7;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: #ddd;
+}
+
+.navbar-emergency {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-emergency:hover {
+  background-color: #cc0000;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 120px auto 80px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.about-header {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-subtitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #7f8c8d;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-content {
+  padding: 40px;
+}
+
+.about-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #34495e;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.about-mission,
+.about-vision {
+  margin-bottom: 40px;
+}
+
+.about-mission-title,
+.about-vision-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.about-mission-description,
+.about-vision-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #34495e;
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Add keyframes for fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+  }
+
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-header, .about-content {
+    padding: 20px;
+  }
+
+  .about-title {
+    font-size: 36px;
+  }
+
+  .about-subtitle {
+    font-size: 20px;
+  }
+
+  .about-mission-title,
+  .about-vision-title {
+    font-size: 28px;
+  }
+
+  .about-description,
+  .about-mission-description,
+  .about-vision-description {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,100 @@
+.features-wrapper {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f4f4f4; /* Slightly different shade for improved contrast */
+}
+
+.features-title {
+  font-size: 40px; /* Increased font size for a more impactful header */
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Added letter spacing for better readability */
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px; /* Increased spacing for better separation */
+}
+
+.feature-box {
+  background-color: #2c2c2e;
+  border-radius: 15px; /* Slightly rounded corners for a modern look */
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  flex: 1 1 calc(25% - 30px); /* Adjust width to account for gap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Darker overlay for better contrast */
+  transition: background 0.3s;
+}
+
+.feature-box:hover {
+  transform: scale(1.05); /* Scale up on hover for a more dynamic effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.feature-box:hover::before {
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay on hover */
+}
+
+.feature-content {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-heading {
+  font-size: 26px; /* Increased font size for headings */
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.feature-text {
+  font-size: 18px; /* Slightly larger text for better readability */
+  margin: 0;
+  color: #dcdcdc; /* Lighter gray for better readability */
+  line-height: 1.5; /* Improved line spacing */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .feature-box {
+    flex: 1 1 calc(33.333% - 30px); /* 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-box {
+    flex: 1 1 calc(50% - 30px); /* 2 columns on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-box {
+    flex: 1 1 100%; /* 1 column on very small screens */
+  }
+}

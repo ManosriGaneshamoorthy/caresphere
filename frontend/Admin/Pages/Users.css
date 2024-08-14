@@ -1,0 +1,127 @@
+/* styles.css */
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #2838a3;
+  padding: 3px;
+  border-right: 1px solid #ddd;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.logo img {
+  margin-left: -80px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h2 {
+  font-size: 20px;
+  margin-left: -10px;
+  font-weight: bold;
+  color: #faf4f4;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  border-bottom: 1px solid #444; /* Maintained for readability */
+}
+
+.sidebar a {
+  color: #e5e2ef; /* Ensuring text color contrasts with the background */
+  text-decoration: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 0px;
+  margin-left: 250px;
+  overflow-y: auto;
+}
+
+.header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.content {
+  padding: 20px;
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+.searchArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.userListSearch {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.userList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-card {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.fullname {
+  margin-bottom: 10px;
+}
+
+.email {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+.location {
+  margin-bottom: 10px;
+}
